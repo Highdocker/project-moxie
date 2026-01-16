@@ -1,3 +1,36 @@
+.siteContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #191718;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
 .homeNavBar {
+  display: flex;
+  flex-direction: column;
   background-color: #322e30;
+  width: 100%;
+  height: 60px;
+}
+
+.homeNavBarBottom {
+  background-color: #141213;
+  width: 100%;
+  height: 5px;
+  margin-top: auto;
+}
+
+/*                 ||||
+* To be removed... VVVV
+*/
+
+.colorPallete {
+  color: #5e4655;
+  background-color: #404326;
+  border-color: #e4de93;
+  text-shadow: #191718;
+  box-shadow: #dcd4d2;
 }

@@ -1,9 +1,14 @@
-import styles from "../styles.css";
+import { ReactNode } from "react";
 
-const NavBar = () => {
+interface Props {
+  children?: ReactNode;
+}
+
+const NavBar = ({ children }: Props) => {
   return (
-    <div>
-      <h1 className="homeNavBar"></h1>
+    <div className="homeNavBar">
+      {children}
+      <div className="homeNavBarBottom"></div>
     </div>
   );
 };
