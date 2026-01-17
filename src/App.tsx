@@ -1,4 +1,5 @@
 import NavBar from "./components/NavBar";
+import NavBarContent from "./components/NavBarContent";
 import SiteContainer from "./components/SiteContainer";
 import "./styles.css";
 
@@ -7,8 +8,9 @@ function App() {
     <>
       <SiteContainer>
         <NavBar>
-          <h1>Temporarily putting some bullshit here</h1>
-          <h2>And here too</h2>
+          <NavBarContent></NavBarContent>
+          <NavBarContent></NavBarContent>
+          <NavBarContent></NavBarContent>
         </NavBar>
       </SiteContainer>
     </>

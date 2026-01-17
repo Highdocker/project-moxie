@@ -5,12 +5,7 @@ interface Props {
 }
 
 const NavBar = ({ children }: Props) => {
-  return (
-    <div className="homeNavBar">
-      {children}
-      <div className="homeNavBarBottom"></div>
-    </div>
-  );
+  return <div className="homeNavBar">{children}</div>;
 };
 
 export default NavBar;
