@@ -7,11 +7,15 @@ interface Props {
 const NavSearchBar = ({ children }: Props) => {
   return (
     <div className="navSearchContent">
-      <img src="/svgcontent/searchicon.svg" className="navSearchIcon" />
+      <button className="navSearchButton">
+        <img src="/svgcontent/searchicon.svg" className="navSearchIcon" />
+      </button>
       <div className="navSearchBar">
         <input type="search" className="navSearchInput" />
       </div>
-      <img src="/svgcontent/filtericon.svg" className="navFilterIcon" />
+      <button className="navFilterButton">
+        <img src="/svgcontent/filtericon.svg" className="navFilterIcon" />
+      </button>
     </div>
   );
 };

@@ -32,6 +32,44 @@
   padding: 0px 5px;
 }
 
+.navBarButton {
+  border: none;
+}
+
+/* for making button darker, here is the credit:
+ * https://stackoverflow.com/questions/65297617/how-to-make-an-elements-background-color-a-little-darker-using-css */
+.navBarButton:hover {
+  background-image: linear-gradient(to bottom, rgb(0 0 0/40%), rgb(0 0 0/0%));
+}
+
+.navSearchButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #191718;
+  border: none;
+  padding: 0px 0px;
+}
+
+.navSearchButton:hover {
+  background-image: radial-gradient(rgb(0 0 0/40%) 0%, rgb(0 0 0/0%) 75%);
+}
+
+.navFilterButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #191718;
+  border: none;
+  padding: 0px 0px;
+}
+
+.navFilterButton:hover {
+  background-image: radial-gradient(rgb(0 0 0/40%) 0%, rgb(0 0 0/0%) 75%);
+}
+
 .navSearchContent {
   display: flex;
   justify-content: center;
@@ -40,7 +78,7 @@
   height: 90%;
   width: 30%;
   margin: 0px 5px;
-  padding: 0px 5px;
+  padding: 0px 0px;
 }
 .navSearchIcon {
   padding: 15px 15px;

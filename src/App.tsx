@@ -2,11 +2,17 @@ import BackContent from "./components/BackContent";
 import BackContentWrapper from "./components/BackContentWrapper";
 import BackSideContent from "./components/BackSideContent";
 import FeaturedContent from "./components/FeaturedContent";
+import GeneralContentLargeWrapper from "./components/GeneralContentLargeWrapper";
+import GeneralContentLarge from "./components/GeneralContentLarge";
+import MainContent from "./components/MainContent";
+import MainContentWrapper from "./components/MainContentWrapper";
+import MainSideContent from "./components/MainSideContent";
 import NavBar from "./components/NavBar";
 import NavBarText from "./components/NavBarText";
 import NavBarContent from "./components/NavBarText";
 import NavSearchBar from "./components/NavSearchBar";
 import SiteContainer from "./components/SiteContainer";
+
 import "./styles.css";
 
 function App() {
@@ -31,6 +37,24 @@ function App() {
           </BackContent>
           <BackSideContent></BackSideContent>
         </BackContentWrapper>
+        <MainContentWrapper>
+          <MainSideContent></MainSideContent>
+          <MainContent>
+            <GeneralContentLargeWrapper>
+              <GeneralContentLarge></GeneralContentLarge>
+            </GeneralContentLargeWrapper>
+            <GeneralContentLargeWrapper>
+              <GeneralContentLarge></GeneralContentLarge>
+            </GeneralContentLargeWrapper>
+            <GeneralContentLargeWrapper>
+              <GeneralContentLarge></GeneralContentLarge>
+            </GeneralContentLargeWrapper>
+            <GeneralContentLargeWrapper>
+              <GeneralContentLarge></GeneralContentLarge>
+            </GeneralContentLargeWrapper>
+          </MainContent>
+          <MainSideContent></MainSideContent>
+        </MainContentWrapper>
       </SiteContainer>
     </>
   );

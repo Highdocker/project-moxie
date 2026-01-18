@@ -6,10 +6,9 @@ interface Props {
 }
 const NavBarText = ({ children, navText }: Props) => {
   return (
-    <div className="navBarContent">
-      <div>{children}</div>
+    <button className="navBarContent navBarButton">
       <h1 className="navBarText">{navText}</h1>
-    </div>
+    </button>
   );
 };
 
