@@ -13,6 +13,7 @@
 .homeNavBar {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: flex-end;
   box-sizing: border-box;
   background-color: #322e30;
@@ -27,9 +28,37 @@
   box-sizing: border-box;
   background-color: #191718;
   height: 90%;
-  width: 8%;
+  width: 10%;
   margin: 0px 5px;
   padding: 0px 5px;
+}
+
+.navBarInteractable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #191718;
+  width: 2.25%;
+  height: 90%;
+  margin: 0px 10px;
+  padding: 0px 5px;
+}
+.navInteractableButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #191718;
+  border: none;
+}
+
+.navInteractableButton:hover {
+  background-image: radial-gradient(rgb(0 0 0/40%) 0%, rgb(0 0 0/0%) 75%);
+}
+
+.navFilterButton:hover {
+  background-image: radial-gradient(rgb(0 0 0/40%) 0%, rgb(0 0 0/0%) 75%);
 }
 
 .navBarButton {
@@ -80,10 +109,7 @@
   margin: 0px 5px;
   padding: 0px 0px;
 }
-.navSearchIcon {
-  padding: 15px 15px;
-}
-.navFilterIcon {
+.navIcon {
   padding: 15px 15px;
 }
 .navSearchBar {
@@ -128,7 +154,7 @@
   font-weight: 100;
   letter-spacing: 2px;
 }
-
+/* This marks the start of DROPDOWNMENU content*/
 /* This marks the start of FEATURED content */
 .backContentWrapper {
   display: flex;

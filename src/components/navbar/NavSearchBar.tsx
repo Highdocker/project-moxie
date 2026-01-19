@@ -8,13 +8,13 @@ const NavSearchBar = ({ children }: Props) => {
   return (
     <div className="navSearchContent">
       <button className="navSearchButton">
-        <img src="/svgcontent/searchicon.svg" className="navSearchIcon" />
+        <img src="/svgcontent/searchicon.svg" className="navIcon" />
       </button>
       <div className="navSearchBar">
         <input type="search" className="navSearchInput" />
       </div>
       <button className="navFilterButton">
-        <img src="/svgcontent/filtericon.svg" className="navFilterIcon" />
+        <img src="/svgcontent/filtericon.svg" className="navIcon" />
       </button>
     </div>
   );
