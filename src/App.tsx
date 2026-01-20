@@ -17,24 +17,38 @@ import "./styles.css";
 import NavBarMenu from "./components/navbar/NavBarMenu";
 import NavBarAccount from "./components/navbar/NavBarAccount";
 import NavBarInteractable from "./components/navbar/NavBarInteractable";
+import NavBarDropdownmenu from "./components/navbar/NavBarDropdownmenu";
+import NavBarDropdownItem from "./components/navbar/NavBarDropdownItem";
+import NavBarWrapper from "./components/navbar/NavBarWrapper";
 
 function App() {
   return (
     <>
       <SiteContainer>
-        <NavBar>
-          <NavBarInteractable>
-            <NavBarMenu></NavBarMenu>
-          </NavBarInteractable>
-          <NavBarText navText={"Home"}></NavBarText>
-          <NavBarText navText={"Featured"}></NavBarText>
-          <NavBarText navText={"Tierlist"}></NavBarText>
-          <NavSearchBar></NavSearchBar>
-          <NavBarText navText={"Graphs"}></NavBarText>
-          <NavBarText navText={"Newsletter"}></NavBarText>
-          <NavBarText navText={"Account"}></NavBarText>
-          <NavBarAccount></NavBarAccount>
-        </NavBar>
+        <NavBarWrapper>
+          <NavBar>
+            <NavBarInteractable>
+              <NavBarMenu>
+                <NavBarDropdownmenu>
+                  <NavBarDropdownItem></NavBarDropdownItem>
+                  <NavBarDropdownItem></NavBarDropdownItem>
+                  <NavBarDropdownItem></NavBarDropdownItem>
+                  <NavBarDropdownItem></NavBarDropdownItem>
+                </NavBarDropdownmenu>
+              </NavBarMenu>
+            </NavBarInteractable>
+            <NavBarText navText={"Home"}></NavBarText>
+            <NavBarText navText={"Featured"}></NavBarText>
+            <NavBarText navText={"Tierlist"}></NavBarText>
+            <NavSearchBar></NavSearchBar>
+            <NavBarText navText={"Graphs"}></NavBarText>
+            <NavBarText navText={"Newsletter"}></NavBarText>
+            <NavBarText navText={"Account"}></NavBarText>
+            <NavBarInteractable>
+              <NavBarAccount></NavBarAccount>
+            </NavBarInteractable>
+          </NavBar>
+        </NavBarWrapper>
         <BackContentWrapper>
           <BackSideContent></BackSideContent>
           <BackContent>

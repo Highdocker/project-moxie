@@ -5,7 +5,7 @@ interface Props {
 }
 
 const NavBarDropdownmenu = ({ children }: Props) => {
-  return <div>NavBarDropdownmenu</div>;
+  return <div className="navBarDropdownmenu">{children}</div>;
 };
 
 export default NavBarDropdownmenu;

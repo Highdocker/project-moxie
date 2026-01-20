@@ -6,11 +6,11 @@ interface Props {
 
 const NavBarAccount = ({ children }: Props) => {
   return (
-    <div className="navBarInteractable">
+    <>
       <button className="navInteractableButton">
         <img src="/svgcontent/accounticon.svg" className="navIcon" />
       </button>
-    </div>
+    </>
   );
 };
 
